@@ -9,6 +9,7 @@
   --footer-links-color: rgba(255, 255, 255, 0.6);
   --border-color: #ECECEC;
   --footer-links-color:rgba(255, 255, 255, 0.6);
+  --border-color:#AFB1B8;
 }
 
 body{
@@ -159,6 +160,7 @@ h1,h2,h3,h4,h5,h6,p{
  /* Hero section */
 
 .hero-section{
+ 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
@@ -167,11 +169,28 @@ h1,h2,h3,h4,h5,h6,p{
   letter-spacing: 0.06em;
   text-align: center;
 
+max-width: 1600px;
+min-height: 600px;
+
+margin-left: auto;
+margin-right: auto;
+
   padding-top: 200px;
   padding-bottom: 200px;
-  /* outline: 2px solid tomato;  */
+  outline: 2px solid tomato; 
   background-color: var(--hero-footer-background-color);
+
+  background-image: linear-gradient(to right,
+  rgba(47,48,58,0.4), 
+  rgba(47,48,58,0.4)),
+  url(../images/header-img.jpg);
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+
 
 .hero-slogan{
   font-weight: 900;
@@ -185,11 +204,11 @@ h1,h2,h3,h4,h5,h6,p{
   margin-left: auto;
   margin-right:  auto;
   
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   width: 696px;
   
   color: var(--background-color) ;
-  background-color: var(--hero-footer-background-color);
+  /* background-color: var(--hero-footer-background-color); */
 }
 
 .order-btn{
@@ -233,6 +252,15 @@ h1,h2,h3,h4,h5,h6,p{
 .features-container:last-child{
   margin-right: 0;
 }
+
+.features-visual{
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--team-n-buttons-color);
+   outline: 2px solid tomato;
+}
+
 
 .features-subtitle {
   font-weight: 700;
@@ -311,6 +339,8 @@ img{
 .teammate{
   background-color: var(--background-color);
   margin-right: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   /* outline: 2px solid tomato; */
 }
 
@@ -342,7 +372,27 @@ margin-bottom: 30px;
 
   text-align: center;
   /* outline: 2px solid tomato; */
-  padding-bottom: 30px;
+  
+}
+
+.customers-logo{
+  width: 170px;
+  height: 92px;
+   /* outline: 2px solid tomato; */
+}
+
+.customers-list{
+  display: flex;
+}
+
+.customer{
+  margin-right: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.customer:last-child{
+  margin: 0;
 }
 
 .footer{
@@ -359,7 +409,6 @@ margin-bottom: 30px;
   line-height: 1.2;
 
   margin-bottom: 20px;
-  width: 145px;
   display: block;
   /* outline: 2px solid tomato; */
   color: var(--accent-color);
@@ -501,13 +550,15 @@ margin-bottom: 30px;
 }
 
 .our-work-item{
-  
-
   margin-top: 30px;
   margin: 15px;
   /* outline: 2px solid tomato; */
   align-items: center; 
 }
+
+.our-work-item:hover
+{box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)}
+
 
 .our-work-card{
   /* outline: 2px solid tomato; */
