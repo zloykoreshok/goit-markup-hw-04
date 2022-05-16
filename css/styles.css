@@ -389,7 +389,7 @@ img{
 .teammate{
   background-color: var(--background-color);
   margin-right: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   /* outline: 2px solid tomato; */
 }
@@ -402,6 +402,12 @@ img{
   /* outline: 2px solid tomato; */
 margin-bottom: 30px;
 }
+
+.teammate-section{
+  outline: 2px solid tomato;
+  
+}
+
 
 .our-team-name{
   font-size: 16px;
@@ -419,11 +425,27 @@ margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 
   text-align: center;
   /* outline: 2px solid tomato; */
   
 }
+
+.socials-list{
+  list-style: none;
+}
+
+.social-link{
+  text-decoration: none;
+  
+
+}
+
+.socials-icon{
+  color: #000000;
+}
+
 
 .customers-list{
   
