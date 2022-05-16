@@ -9,7 +9,7 @@
   --footer-links-color: rgba(255, 255, 255, 0.6);
   --border-color: #ECECEC;
   --footer-links-color:rgba(255, 255, 255, 0.6);
-  --border-color:#AFB1B8;
+  --icon-color:#AFB1B8;
 }
 
 body{
@@ -147,7 +147,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .header-mail::before{
-  content: url("../images/envelope.svg");
+  content: url("./images/sprite.svg#envelope.svg");
   width: 20px;
   height: 16px;
   margin-right: 10px;
@@ -400,12 +400,13 @@ img{
 
 .team-division{
   /* outline: 2px solid tomato; */
-  margin-bottom: 30px;
+ 
 }
 
 .teammate-section{
   outline: 2px solid tomato;
-  
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 
@@ -435,19 +436,46 @@ img{
 .socials-list{
   list-style: none;
   display: flex;
-  padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin: 0 32px;
+ 
 }
 
-.social-link{
-  text-decoration: none;
-  outline: 2px solid tomato;
+.socials-item:not(:last-child){
+  margin-right: 10px;
+}
 
+
+
+.socials-link{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-color);
+  border-radius:50%;
+
+  /* outline: 2px solid tomato; */
+
+}
+
+.socials-link:hover,
+.socials-link:focus{
+  background-color: var(--accent-color);
 }
 
 .socials-icon{
-  /* background-color: #000000; */
+  fill: var(--icon-color);
 }
 
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon{
+fill: var(--background-color);
+}
 
 .customers-list{
   
@@ -478,7 +506,6 @@ img{
 
 .customer-logo{
  outline: 2px solid tomato;
-
 }
 
 .customer-link{
