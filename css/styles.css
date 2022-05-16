@@ -146,6 +146,34 @@ h1,h2,h3,h4,h5,h6,p{
   color: var(--primary-text-color); 
 }
 
+.header-mail::before{
+  content: url("../images/envelope.svg");
+  width: 20px;
+  height: 16px;
+  margin-right: 10px;
+  /* background-image: url("../images/envelope.svg"); */
+  background-size: contain;
+}
+
+.header-phone{
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  /* outline: 2px solid tomato; */
+  color: var(--primary-text-color); 
+}
+
+.header-phone::before{
+  content: url("../images/smartphone.svg");
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  /* background-image: url("../images/envelope.svg"); */
+  background-size: contain;
+}
+
+
 .header-contacts-list{
   text-decoration: none;
   margin-right: 50px;
@@ -156,6 +184,8 @@ h1,h2,h3,h4,h5,h6,p{
 .header-contacts-list:last-child{
   margin-right: 0;
 }
+
+
 
  /* Hero section */
 
@@ -253,14 +283,34 @@ margin-right: auto;
   margin-right: 0;
 }
 
-.features-visual{
-  width: 270px;
+.features-container::before{
+  display: block;
+  content: "";
   height: 120px;
+  border-radius: 4px;
   margin-bottom: 30px;
   background-color: var(--team-n-buttons-color);
-   outline: 2px solid tomato;
+  
+   background-size: 70px, 70px, contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.features-container:nth-child(1)::before{ 
+  background-image: url(../images/antenna.svg);
+}
+
+.features-container:nth-child(2)::before{ 
+  background-image: url(../images/clock.svg);
+}
+
+.features-container:nth-child(3)::before{ 
+  background-image: url(../images/diagram.svg);
+}
+
+.features-container:nth-child(4)::before{ 
+  background-image: url(../images/astronaut.svg);
+}
 
 .features-subtitle {
   font-weight: 700;
@@ -375,25 +425,51 @@ margin-bottom: 30px;
   
 }
 
-.customers-logo{
-  width: 170px;
-  height: 92px;
-   /* outline: 2px solid tomato; */
+.customers-list{
+  
+  display: flex;
+  justify-content:center;
 }
 
-.customers-list{
-  display: flex;
-}
 
 .customer{
+  box-sizing: border-box;
+  
+  width: 170px;
+  height: 92px;
+  
+  padding: 16px 32px;
+
   margin-right: 30px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
+
+  display: flex;
+  justify-content:center;
 }
 
 .customer:last-child{
   margin: 0;
 }
+
+.customer-logo{
+ outline: 2px solid tomato;
+
+}
+
+.customer-link{
+   outline: 2px solid tomato;
+  width: 106px;
+  display: block;
+  content: "";
+  height: 60px; 
+  background-image: url(../images/first-logo.svg);
+  background-size:  contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+
 
 .footer{
   padding-top:60px;
