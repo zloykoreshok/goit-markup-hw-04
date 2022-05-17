@@ -26,6 +26,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* Утилиты */
+
 .list{
   list-style: none;
   margin: 0;
@@ -49,19 +50,19 @@ h1,h2,h3,h4,h5,h6,p{
   
   margin-left: auto;
   margin-right: auto; 
-
   /* outline: 2px solid tomato; */
 }
 
 .portfolio-container{
   width: 1200px;
-  /* outline: 2px solid tomato; */  
+   
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
+  /* outline: 2px solid tomato; */  
 }
 
-
   /* Header section */
+
 .header{
   border-bottom: var(--border-color) solid 1px;
 }
@@ -69,6 +70,7 @@ h1,h2,h3,h4,h5,h6,p{
 .header-container{
   display: flex;
   align-items: center;
+
   margin-top: 0;
 }
 
@@ -81,10 +83,12 @@ h1,h2,h3,h4,h5,h6,p{
   margin-right: 90px;
   padding-top: 24px;
   padding-bottom: 24px;
+
   width: 145px;
+
   display: block;
-  /* outline: 2px solid tomato; */
   color: var(--accent-color);
+  /* outline: 2px solid tomato; */
 }
 
 .logo-header{
@@ -96,9 +100,10 @@ h1,h2,h3,h4,h5,h6,p{
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  /* outline: 2px solid tomato; */
+  
   align-items: center;
-  display: flex;  
+  display: flex;
+  /* outline: 2px solid tomato; */  
 }
 
 .navigation-item{
@@ -111,19 +116,20 @@ h1,h2,h3,h4,h5,h6,p{
 
 .navigation-link{
   text-decoration: none;
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
-  /* outline: 2px solid tomato; */
+  
   color: var(--title-text-color);
+  /* outline: 2px solid tomato; */
 }
 
 .active-navigation-link{
-  color: var(--accent-color);
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  /* outline: 2px solid tomato; */
-  display: block;  
+  color: var(--accent-color);
+  /* outline: 2px solid tomato; */  
 }
 
 .header-contacts{
@@ -131,7 +137,9 @@ h1,h2,h3,h4,h5,h6,p{
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+
   margin-left: auto;
+
   align-items: center;
   display: flex;
   /* outline: 2px solid tomato; */
@@ -141,30 +149,31 @@ h1,h2,h3,h4,h5,h6,p{
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
-  /* outline: 2px solid tomato; */
+  /* display: block; */ 
   color: var(--primary-text-color); 
-
+  /* outline: 2px solid tomato; */
 }
 
 .header-icon{
   margin-right: 10px;
- fill: currentColor;
 }
 
 
 .header-contacts-list{
   text-decoration: none;
   margin-right: 50px;
-  /* outline: 2px solid tomato;  */
   color: var(--primary-text-color);
+  /* outline: 2px solid tomato;  */
 }
 
 .header-contacts-list:last-child{
   margin-right: 0;
 }
 
-
+.header-mail:hover,
+.header-mail:focus{
+  color:var(--accent-color);
+}
 
  /* Hero section */
 
@@ -178,15 +187,15 @@ h1,h2,h3,h4,h5,h6,p{
   letter-spacing: 0.06em;
   text-align: center;
 
-max-width: 1600px;
-min-height: 600px;
+  max-width: 1600px;
+  min-height: 600px;
 
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
   padding-top: 200px;
   padding-bottom: 200px;
-  outline: 2px solid tomato; 
+  
   background-color: var(--hero-footer-background-color);
 
   background-image: linear-gradient(to right,
@@ -197,11 +206,12 @@ margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* outline: 2px solid tomato;  */
 }
 
-
-
 .hero-slogan{
+  width: 696px;
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -212,12 +222,9 @@ margin-right: auto;
 
   margin-left: auto;
   margin-right:  auto;
-  
   margin-bottom: 30px;
-  width: 696px;
   
-  color: var(--background-color) ;
-  /* background-color: var(--hero-footer-background-color); */
+  color: var(--background-color);
 }
 
 .order-btn{
@@ -237,6 +244,7 @@ margin-right: auto;
   text-align: center; 
   align-items: center;
   display: inline-block;
+
   color: var(--background-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -252,11 +260,13 @@ margin-right: auto;
 }
 
 .features-division{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   width: 270px;
   height: 120px;
-
-  padding: 25px 100px;
-
+  
   margin-bottom: 30px;
   background: #F5F4FA;
   border-radius: 4px;
@@ -264,8 +274,7 @@ margin-right: auto;
 
 .features-container{
   margin-right: 30px;
-  width: 270px;
-  
+  width: 270px; 
   /* outline: 2px solid tomato; */
 }
 
@@ -299,8 +308,8 @@ img{
 }
 
 .what-we-do-section{
-  /* outline: 2px solid tomato; */
   padding-bottom: 94px;
+  /* outline: 2px solid tomato; */
 }
 
 .what-we-do-list {
@@ -317,7 +326,6 @@ img{
   margin: 0;
 }
 
-
 .section-title{
   font-weight: 700;
   font-size: 36px;
@@ -330,18 +338,16 @@ img{
   color: var(--title-text-color);
 }
 
-.our-team-section{
-  /* outline: 2px solid tomato; */
+.our-team-section{ 
   background-color: var(--team-n-buttons-color);
+  /* outline: 2px solid tomato; */
 }
-
 
 .our-team-list{
   text-align: center;
   display: flex;
   padding-left: 0;
 }
-
 
 .teammate{
   background-color: var(--background-color);
@@ -357,13 +363,12 @@ img{
 
 .team-division{
   /* outline: 2px solid tomato; */
- 
 }
 
 .teammate-section{
-  outline: 2px solid tomato;
   padding-top: 30px;
   padding-bottom: 30px;
+  /* outline: 2px solid tomato; */
 }
 
 
@@ -372,11 +377,11 @@ img{
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-  
+
   margin-bottom: 10px;
-  /* outline: 2px solid tomato; */
 
   color: var(--title-text-color);
+  /* outline: 2px solid tomato; */
 }
 
 .our-team-position{
@@ -387,7 +392,6 @@ img{
 
   text-align: center;
   /* outline: 2px solid tomato; */
-  
 }
 
 .socials-list{
@@ -397,14 +401,11 @@ img{
   align-items: center;
   padding-left: 0;
   margin: 0 32px;
- 
 }
 
 .socials-item:not(:last-child){
   margin-right: 10px;
 }
-
-
 
 .socials-link{
   text-decoration: none;
@@ -415,9 +416,7 @@ img{
   height: 44px;
   background-color: var(--background-color);
   border-radius:50%;
-
   /* outline: 2px solid tomato; */
-
 }
 
 .socials-link:hover,
@@ -441,23 +440,21 @@ fill: var(--background-color);
 }
 
 .customer-link{
-   /* outline: 2px solid tomato; */
-
    width: 170px;
    height: 92px;
 
    display: flex;
    justify-content:center;
-  align-items: center;
-  fill: var(--primary-text-color);
-  margin-right: 30px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-  
+   align-items: center;
+   margin-right: 30px;
+   border: 1px solid var(--icon-color);
+   border-radius: 4px;
 
-  background-size:  contain;
-  background-repeat: no-repeat;
-  background-position: center; 
+   background-size:  contain;
+   background-repeat: no-repeat;
+   background-position: center; 
+   fill: var(--primary-text-color); 
+  /* outline: 2px solid tomato; */
 }
 
 .customer-link:hover,
@@ -470,8 +467,9 @@ fill: var(--background-color);
 .footer{
   padding-top:60px;
   padding-bottom: 60px;
+ 
+  background-color: var(--hero-footer-background-color);
  /* outline: 2px solid tomato; */
- background-color: var(--hero-footer-background-color);
 }
 
 .footer-logo{
@@ -482,35 +480,37 @@ fill: var(--background-color);
 
   margin-bottom: 20px;
   display: block;
-  /* outline: 2px solid tomato; */
+  
   color: var(--accent-color);
+  /* outline: 2px solid tomato; */
 }
 
 .logo-footer{
   color: var(--background-color);
 }
 
+
 .footer-list{
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin: 0;
-  /* outline: 2px solid tomato; */
-  color: var(--background-color);
+  
   font-style: normal; 
   list-style: none;
-  padding-left: 0;  
+  padding-left: 0;
+  /* outline: 2px solid tomato; */  
 }
 
 .adress{
   font-style: normal;
-  
+  line-height: 24px;
+
+  color: var(--background-color);
   /* outline: 2px solid tomato; */
 }
 
 .adress-list{
-  /* margin-top: 0;
-  margin-bottom: 0; */
   margin-top: 9px;
   /* outline: 2px solid tomato; */
 }
@@ -522,25 +522,65 @@ fill: var(--background-color);
   color:var(--footer-links-color); 
 }
 
+.footer-info-container{
+  display: flex;
+  /* outline: 2px solid tomato; */
+}
+
+.footer-adress{
+  margin-right: 70px;
+}
+
 .footer-invitation{
-  width: 206px;
-  height: 80px;
-  
-  }
-  
-  .footer-socials{
-  
-    
+ margin: 0;
   }
 
+.invitation-row{
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-top: 12px;
+  padding-bottom: 20px;
+  color: var(--background-color);
+}
 
+.footer-socials{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-socials-item:not(:last-child){
+  margin-right: 10px;}
+
+
+.footer-socials-link{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-text-color);
+  border-radius:50%;
+  opacity: 0.9;
+}
+
+.footer-socials-icon{
+ fill: var(--background-color);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus{
+  background-color: var(--accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
 .navigation-link:hover,
 .navigation-link:focus,
-.header-mail:hover,
-.header-mail:focus,
-.header-icon:hover,
-.header-icon:focus,
 .footer-link:hover, 
 .footer-link:focus{
   color: var(--accent-color);
@@ -548,14 +588,9 @@ fill: var(--background-color);
 
 /* portfolio.html page */
 
-.portfolio-container{
-  
-}
-
 .portfolio-section{
   padding-top: 94px;
-  padding-bottom: 94px;
-        
+  padding-bottom: 94px;      
   /* outline: 2px solid tomato; */
 }
 
@@ -604,12 +639,12 @@ fill: var(--background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  border: 0;
   border-radius: 4px;
   letter-spacing: 0.03em;
   text-align: center;
   padding: 6px 22px 6px 22px;
   cursor: pointer;
-  border: 0;
   
   color: var(--background-color);
   background-color: var(--accent-color);
@@ -637,20 +672,21 @@ fill: var(--background-color);
 .our-work-item{
   margin-top: 30px;
   margin: 15px;
-  /* outline: 2px solid tomato; */
+
   align-items: center; 
+  /* outline: 2px solid tomato; */
 }
 
-.our-work-item:hover
-{box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)}
-
+.our-work-item:hover{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .our-work-card{
-  /* outline: 2px solid tomato; */
   padding: 20px 24px;
   border-left: var(--border-color) solid 1px;
   border-right: var(--border-color ) solid 1px;
   border-bottom: var(--border-color) solid 1px;
+  /* outline: 2px solid tomato; */
 }
 
 .our-work-customer{
