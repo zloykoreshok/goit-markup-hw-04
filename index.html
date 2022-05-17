@@ -37,11 +37,11 @@
                 
                 <li class="header-contacts-list">
 
-                   <a class="header-mail" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+                   <a class="header-mail" href="mailto:info@devstudio.com" ><svg class="header-icon" width="16" height="12"><use href="./images/sprite.svg#envelope"></use></svg>info@devstudio.com</a></li>
                   
                 <li class="header-contacts-list">
 
-                  <a class="header-phone" href="tel:+380961111111"  >+38 096 111 11 11</a></li>
+                  <a class="header-mail" href="tel:+380961111111"><svg class="header-icon" width="10" height="16"><use href="./images/sprite.svg#smartphone"></use></svg>+38 096 111 11 11</a></li>
               </ul>         
          </div>
       </header>
@@ -68,21 +68,33 @@
               <h2 hidden>Особенности</h2>
               <ul class="features-list list">
                 <li class="features-container">
+                  <div class="features-division"><svg width="70" height="70">
+                    <use href="./images/sprite.svg#antenna"></use>
+                  </svg></div>
                   <h3 class="features-subtitle" >Внимание к деталям</h3>
                   <p class="features-page-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
 
                 <li class="features-container">
+                  <div class="features-division"><svg width="70" height="70">
+                    <use href="./images/sprite.svg#clock"></use>
+                  </svg></div>
                   <h3 class="features-subtitle" >Пунктуальность</h3>
                   <p class="features-page-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p> 
                 </li>
 
                 <li class="features-container">
+                  <div class="features-division"><svg width="70" height="70">
+                    <use href="./images/sprite.svg#diagram"></use>
+                  </svg></div>
                   <h3 class="features-subtitle" >Планирование</h3>
                   <p class="features-page-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
 
                 <li class="features-container">
+                  <div class="features-division"><svg width="70" height="70">
+                    <use href="./images/sprite.svg#astronaut"></use>
+                  </svg></div>
                   <h3 class="features-subtitle" >Современные технологии</h3>
                   <p class="features-page-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -214,39 +226,27 @@
               <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="customers-list list">
                   <li class="customer">
-                    <!-- <div class="customers-logo"> -->
-                      <a class="customer-link one"  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"></a>
-                    <!-- </div> -->
+                      <a class="customer-link"  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"> <svg width="106" height="60"><use href="./images/sprite.svg#first-logo"></use></svg> </a>
                   </li>
 
                   <li class="customer">
-                    <!-- <div class="customers-logo"> -->
-                      <a class="customer-link "  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"></a>
-                    <!-- </div> -->
+                      <a class="customer-link "  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"><svg width="106" height="60"><use href="./images/sprite.svg#second-logo"></use></svg></a>
                   </li>
 
                   <li class="customer">
-                    <!-- <div class="customers-logo"> -->
-                      <a class="customer-link"  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"></a>
-                    <!-- </div> -->
+                      <a class="customer-link"  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"><svg width="106" height="60"><use href="./images/sprite.svg#third-logo"></use></svg></a>
                   </li>
 
                   <li class="customer">
-                    <!-- <div class="customers-logo"> -->
-                      <a class="customer-link"  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"></a>
-                    <!-- </div> -->
+                      <a class="customer-link"  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"><svg width="106" height="60"><use href="./images/sprite.svg#fourth-logo"></use></svg></a>
                   </li>
 
                   <li class="customer">
-                    <!-- <div class="customers-logo"> -->
-                      <a class="customer-link"  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"></a>
-                    <!-- </div> -->
+                      <a class="customer-link"  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"> <svg width="106" height="60"><use href="./images/sprite.svg#fifth-logo"></use></svg> </a>
                   </li>
 
                   <li class="customer">
-                    <!-- <div class="customers-logo"> -->
-                      <a class="customer-link"  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"></a>
-                    <!-- </div> -->
+                      <a class="customer-link"  href="/" target="_blank" rel="noopener noreferrer" aria-label="иконка Company"> <svg width="106" height="60"><use href="./images/sprite.svg#sixth-logo"></use></svg> </a>
                   </li> 
                   
             </ul>
@@ -261,6 +261,8 @@
       <footer class="footer">
         <div class="container">
           <a class="footer-logo link" lang="en" href="/">Web<span class="logo-footer">Studio</span></a>
+
+
             <address>
               <ul class="footer-list">
                 <li class="adress">г. Киев, пр-т Леси Украинки, 26</li>
@@ -268,7 +270,18 @@
                 <li class="adress-list"><a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
               </ul>  
             </address>       
-        </div>             
+        </div>
+        
+        <div class="footer-invitation container">
+        <h2>Присоеденяйтесь</h2>
+        <ul class="footer-socials">
+          <li>Inst</li>
+          <li>Tweet</li>
+          <li>Face</li>
+          <li>Link</li>
+        </ul>
+        </div>
+
       </footer>          
     </body>
 </html>
