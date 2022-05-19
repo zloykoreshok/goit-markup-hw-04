@@ -149,13 +149,16 @@ h1,h2,h3,h4,h5,h6,p{
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  /* display: block; */ 
+  display: block; 
   color: var(--primary-text-color); 
   /* outline: 2px solid tomato; */
+
+  
 }
 
 .header-icon{
   margin-right: 10px;
+  
 }
 
 
@@ -169,7 +172,8 @@ h1,h2,h3,h4,h5,h6,p{
 .header-contacts-list:last-child{
   margin-right: 0;
 }
-
+.header-icon:hover,
+.header-icon:focus,
 .header-mail:hover,
 .header-mail:focus{
   color:var(--accent-color);
